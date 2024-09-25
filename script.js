@@ -1,7 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
     let listNotes = [];
     let inputText = document.getElementById("descriptionId");
-    let seeNotesBtn = document.querySelector(".btn");
+    let saveNoteBtn= document.getElementById("saveBtn")
+    let seeNotesBtn = document.getElementById("seeNoteBtn");
 
     let $form = document.querySelector('form');
 
@@ -11,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     function addNote() {
-        let note = inputText.value();
+        let note = inputText.value;
         if (note) {
             listNotes.push(note);
             inputText.value = "";
@@ -21,6 +22,12 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+
+    saveNoteBtn.addEventListener("click", event => {
+        event.preventDefault();
+        addNote();
+        alert("Note has been saved!");
+    });
     
 
     seeNotesBtn.addEventListener("click", event => {
@@ -32,7 +39,7 @@ window.addEventListener("DOMContentLoaded", () => {
             allNotes += note + "\n"
         })
 
-        alert(allNotes);
+        console.log(allNotes);
         
     });
 });

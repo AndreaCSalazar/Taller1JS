@@ -1,8 +1,7 @@
-
 body {
     font-family: Arial, sans-serif;
     background-image: url(../img/colourful-abstract-paper-waves.jpg);
-    background-size: cover;
+    background-size: 100%;
 
 }
 
@@ -45,7 +44,8 @@ form {
 
 
 .titleNote{
-    background-color: #5c6edaf5;
+    background-color: #f5f6f8f5;
+    color: black;
     text-align: center;
     border: none;
     height: 40px;
@@ -56,7 +56,7 @@ form {
 }
 
 #descriptionId{
-    background-color: #9863d1b2;
+    background-color: #e6e6e6a6;
     text-align: center;
     border: none;
     border: solid 1px #c2baba9f;
@@ -92,6 +92,8 @@ form {
     background-color: #32b6af;
     display: flex;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     border: none;
     height: 30px;
     width: 30%;
