@@ -1,112 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-image: url(../img/colourful-abstract-paper-waves.jpg);
-    background-size: 100%;
-
+    font-family: 'Arial', sans-serif;
+    background: #c2cbf894;
+    height: 100vh;
 }
 
+.title{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 90px;
+    text-align: center;
+    color: #111111; 
+    margin-bottom: 1px;
+}
 
-
-h1{
-    background-color: #32b6af;
-    color: #ffffff;
-    font-size: 80px;
+form {                                                                                                                                                                       
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 20px;
+    background-color: white; 
+    padding: 30px;
+    max-width: 400px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+form:hover{
+    transform: scale(1.05); 
+}
+
+.titleNote {
+    background-color: #f8f9fa; 
+    color: #333; 
+    border: 1px solid #ced4da; 
+    height: 50px; 
     border-radius: 10px;
-    
+    padding: 10px; 
+    margin-bottom: 20px; 
+    font-size: 18px; 
 }
 
-form {
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    border-radius: 10%;
-    padding: 20px;
-
+#descriptionId {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    height: 120px;
+    font-size: 16px;
+    resize: none;
 }
 
+::placeholder {
+    color: #999; 
+    font-size: 16px; 
+}
 
-.buttonAdd{
-    
+.buttonAdd {
     cursor: pointer;
-    height: auto;
-    width: auto;
-
-    padding: 10px 20px;
-    border-radius: 4px;
-    
-}
-
-
-.titleNote{
-    background-color: #f5f6f8f5;
-    color: black;
-    text-align: center;
+    background-color: #ebeff552; 
+    color: white; 
     border: none;
-    height: 40px;
-    width: 100%;
-    border: solid 1px #c2baba9f;
-    
-    
+    border-radius: 5px; 
+    padding: 12px 20px; 
+    font-size: 16px; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
-#descriptionId{
-    background-color: #e6e6e6a6;
-    text-align: center;
+.buttonAdd:hover {
+    background-color: #95abcc2c;
+    transform: translateY(-2px);
+}
+
+.btn {
+    background-color: #567ab1; 
+    color: white; 
     border: none;
-    border: solid 1px #c2baba9f;
-
-    height: max-content;
-    padding: 5rem;
+    height: 50px; 
+    gap: 10px;
+    border-radius: 100px; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
-::placeholder{
-    color: #000;
-    font-size: 20px;
-    font-weight: 800;
+.btn:hover {
+    background-color: #142fc9; 
+    transform: scale(1.05); 
 }
 
-.col-auto{
-
+.col-auto {
     text-align: center;
     display: flex;
-    justify-content: space-around;
-    width: 20rem;
-    height: 8em;
-
+    justify-content: space-between;
+    gap: 10px;   
 }
 
-#saveBtn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.btn{
-    background-color: #32b6af;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border: none;
-    height: 30px;
-    width: 30%;
-    border-radius: 30px;
-    color: #000000;
-    font-weight: 800;
-}
-
-
-.container{
+.container {
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    max-width: 600px; 
+    margin: auto; 
 }
 
